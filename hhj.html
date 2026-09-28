@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="txt-username">username:</label>
+      <input
+        type="text"
+        name="username"
+        id="txt-username"
+        placeholder="tên đăng nhập"
+        required
+      />
+      <br />
+      <label for="txt-password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="txt-password"
+        placeholder="mật khẩu"
+        required
+      />
+      <br />
+      <label for="txt-code">Mã xác nhận</label>
+      <input type="text" name="code" id="txt-code" value="1234" readonly />
+      <label for="txt-cccd">Căn cước công dân</label>
+      <input
+        type="text"
+        name="căn cước cd"
+        id="txt-cccd"
+        value="123123123"
+        disabled
+      />
+      <br />
+      <label for="txt-email">email:</label>
+      <br />
+      <label for="txt-giaykhaisinh">giấy khai sinh:</label>
+      <input
+        type="checkbox"
+        name="giay khai sinh"
+        id="txt-giaykhaisinh"
+        checked
+      />
+      <br />
+      <label for="txt-BangTHPT">Bằng tốt nghiệp</label>
+      <input type="checkbox" name="Bang THP" id="txt-BangTHPT" checked />
+      <br />
+      <label for="txt-gioiting">Giới tính:</label>
+      <input type="radio" name="gioi tinh" id="txt-nam" value="nam" />
+      <input type="radio" name="gioi tinh" id="txt-nu" value="nu" />
+      <input type="radio" name="gioi tinh" id="txt-khac" value="khac" />
+      <br />
+      <label for="txt-ĐTB"> Điểm tb: </label>
+      <input
+        type="number"
+        name="Đtb"
+        id="txt-ĐTB"
+        min="0"
+        max="10"
+        step="0.5"
+        value="0"
+      />
+      <br />
+      <label for="txt-ngaysinh">Ngày sinh:</label>
+      <input type="date" name="ngay sinh" id="txt-ngaysinh" />
+      <input type="time" name="Gio sinh" id="" />
+      <br />
+      <label for="txt-lophoc">Lớp học: </label>
+      < name="" id="txt-lophoc" multiple size="2">
+      <select name="" id="txt-lophoc" multiple size="10">
+        <optgroup>
+          <option value="1">N01_IT</option>
+          <option value="2">N02_IT</option>
+          <option value="3">N03_IT</option>
+          <option value="4">N04_IT</option>
+        </optgroup>
+        <optgroup>
+          <option value="1">N01_QTK</option>
+          <option value="2">N02_QTK</option>
+          <option value="3">N03_QTK</option>
+          <option value="4">N04_QTK</option>
+        </optgroup>
+        <optgroup>
+          <option value="1">N01_QTK</option>
+          <option value="2">N02_QTK</option>
+          <option value="3">N03_QTK</option>
+          <option value="4">N04_QTK</option>
+        </optgroup>
+      </select>
+      <br />
+      <label for="txt-sothichcanhan">
+        <textarea name="so thich" id="txt-sothiccanhan" cols="60" rows="20">
+        </textarea>
+      </label>
+      <hr />
+      <input type="reset" value="Nhập lại" />
+      <input type="button" value="Đăng ký" />
+      <input type="submit" value="Đăng nhập" />
+    </form>
+  </body>
+</html>
